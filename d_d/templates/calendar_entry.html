@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="calendar_entry col-md-6">
+    <h2> {{ entry.name }}</h2>
+    <h4> {{ entry.date|date:"Y M d" }}</h4>
+    <p> {{ entry.description|truncatechars:50 }}</p>
+ <button onclick="window.location='{% url 'details' pk=entry.id %}'" class="btn btn-primary">View Details</button>
+</div>
+</div>

@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+<script>
+jQuery(function ($) {
+    $('.panel').hover(function () {
+        $(this).find('.collapse').stop(true, true).slideDown("slow")
+    }, function () {
+        $(this).find('.collapse').stop(true, true).slideUp("slow")
+    }).find('.collapse').hide()
+
+})
+</script>
+
+
+ <nav class="navbar navbar-default navbar-static-top" style="margin-top:30px;">
+ 	<div class="container-fluid">
+    <div class="container">
+
+    <center><font color="blue"><h3 class="section-title h1"><b>District/Zonal Report</b></h3></font></center>
+ 		<!-- Brand and toggle get grouped for better mobile display -->
+ 		<div class="navbar-header">
+ 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+ 				<span class="sr-only">Toggle navigation</span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 			</button>
+ 	</nav>
+
+ 	<div class="container-fluid main-container">
+
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-6 col-md-offset-1">
+      <div class="panel-group" id="accordion" style="margin-top:50px;">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                       Data Reporting Status (Upto District Level)</a>
+                     </h5>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <a	href="{% url 'report' %}"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                       Data Itemwise Monthly (up to sub district)</a>
+                      </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                        </div>
+                    </div>
+                  </div>
+                 <div class="panel panel-primary">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                     Data ItemWise Comparison</a>
+                    </h4>
+                    </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                         <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-primary">
+                     <div class="panel-heading">
+                     <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                      Performance of Key HMIS Indicators(upto District Level)</a>
+                     </h4>
+                     </div>
+                       <div id="collapse4" class="panel-collapse collapse">
+                         <div class="panel-body">
+                          <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-primary">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                       Performance of Key HMIS Indicators Across Sub District</a>
+                      </h4>
+                      </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                       <div class="panel-heading">
+                       <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                        RCH Reports - Indicator Wise</a>
+                       </h4>
+                       </div>
+                         <div id="collapse6" class="panel-collapse collapse">
+                           <div class="panel-body">
+                              <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h4 class="panel-title">
+                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                         RCH Reports - State Wise</a>
+                        </h4>
+                        </div>
+                          <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-primary">
+                         <div class="panel-heading">
+                         <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                          Min-Max Report</a>
+                         </h4>
+                         </div>
+                           <div id="collapse8" class="panel-collapse collapse">
+                             <div class="panel-body">
+                              <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;"></span></a>
+                             </div>
+                           </div>
+                       </div>
+                       <div class="panel panel-primary">
+                          <div class="panel-heading">
+                        <h5 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                           Range wise Report</a>
+                         </h5>
+                          </div>
+                            <div id="collapse9" class="panel-collapse collapse">
+                              <div class="panel-body" style="margin-right:20px;">
+                                <a	href="#"><span class ="glyphicon glyphicon-folder-open" style="font-size:35px;margin-right:20px;"></span></a>
+                              </div>
+                            </div>
+                        </div>
+               </div>
+           </div>
+ 	</div>
+
+  {% endblock %}

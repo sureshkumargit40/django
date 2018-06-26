@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/mystyle2.css' %}" />
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!--Pulling Awesome Font -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-2">
+            <div class="form-login">
+            <h4>INTEGRATED HEALTHCARE DASHBOARD</h4>
+            <form class="" action="{% url 'login' %}" method="POST">
+              {% csrf_token %}
+             <input type="text" name="username" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+              </br>
+              <input type="password" name="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+              </br>
+              <div class="wrapper">
+              <span class="group-btn">
+              <!--<button class="btn btn-primary btn-md" float="left">login <i class="fa fa-sign-in"></i></button>
+              --->
+              <input type="button" name="login" value="login" class="btn btn-primary btn-md" float="left" onclick="index.html"><i class="fa fa-sign-in"></i>
+            </span>
+            </div>
+
+            </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

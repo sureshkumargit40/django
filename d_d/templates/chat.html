@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('button').click(function(){
+      var message=$('textarea').val();
+      var old = $('.htm').html();
+      $('.htm').html(old+'<p>'+message+'</p>');
+      $('textarea').val("");
+    });
+  });
+
+</script>
+
+<div class="chatbox">
+  <div class="chatlogs"id="content">
+    <h1 align="center">Chat Here</h1>
+    <div class="htm" style="color:blue;">
+
+    </div>
+  </div>
+
+  <div class="chat-form">
+    <textarea></textarea>
+    <button class="btn btn-primary" style="margin-top:10px;">Send</button>
+  </div>
+
+</div>
+
+{% endblock %}

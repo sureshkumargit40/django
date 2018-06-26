@@ -1,0 +1,240 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/mystyle.css' %}" />
+<link rel="stylesheet" href="{% static 'css/mystyle3.css' %}" />
+
+<style>
+.card
+{
+  width:200px;
+  height:220px;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+    font-size: 0px;
+}
+.frontside .card,
+.backside .card {
+    min-height:60px;
+}
+
+</style>
+
+ <nav class="navbar navbar-default navbar-static-top" style="margin-top:30px;">
+ 	<div class="container-fluid">
+ 		<!-- Brand and toggle get grouped for better mobile display -->
+ 		<div class="navbar-header">
+ 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+ 				<span class="sr-only">Toggle navigation</span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 			</button>
+ 			<a class="navbar-brand" href="#">
+        <h1><center><font color="blue"><b>PORTFOLIOS</b></font></center></h1>
+
+ 			</a>
+ 		</div>
+ 		</div>
+ 	</nav>
+
+ 	<div class="container-fluid main-container" style="margin-top:30px;">
+ 		<div class=""col-md-6 offset-md-3" content">
+          <div class="panel panel-inverse">
+               <section id="team" class="pb-5">
+                <div class="container">
+                       <!---<h5 class="section-title h1">DASH BOARD</h5> ---->
+                    <div class="row">
+                           <div class="col-xs-12 col-sm-6 col-md-3">
+                                   <div class="mainflip">
+                                       <div class="frontside">
+                                           <a href="https://nrhm-mis.nic.in/SitePages/Home.aspx">
+                                             <div class="card">
+                                               <div class="card-body text-center">
+                                                   <p><img class=" img-fluid" src="{% static "image1/hmis.png" %}" alt="card image"></p>
+                                                   <h4 class="card-title"><b>HMIS</b></h4>
+                                               </div>
+                                           </div>
+                                          </a>
+                                       </div>
+                                   </div>
+                           </div>
+                           <!-- ./Team member -->
+                           <!-- Team member -->
+                           <div class="col-xs-12 col-sm-6 col-md-3">
+
+                                   <div class="mainflip">
+                                       <div class="frontside">
+                                         <a href="https://rch.nhm.gov.in">
+                                           <div class="card">
+                                               <div class="card-body text-center">
+                                                   <p><img class=" img-fluid" src="{% static "image1/r.png" %}" alt="card image" width="190px" height="150px"></p>
+                                                   <h4 class="card-title"><b>RCH</b></h4>
+
+
+                                               </div>
+                                           </div></a>
+                                       </div>
+
+                                   </div>
+
+                           </div>
+                           <!-- ./Team member -->
+                           <!-- Team member -->
+                           <div class="col-xs-12 col-sm-6 col-md-3">
+
+                                   <div class="mainflip">
+                                       <div class="frontside">
+                                           <div class="card">
+                                               <div class="card-body text-center">
+                                                   <p><img class=" img-fluid" src="{% static "image1/nhp.png" %}" alt="card image"></p>
+                                                   <h4 class="card-title"><b>NIN</b></h4>
+
+
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                   </div>
+
+                           </div>
+                           <!-- ./Team member -->
+                           <!-- Team member -->
+                           <div class="col-xs-12 col-sm-6 col-md-3">
+
+                                   <div class="mainflip">
+                                       <div class="frontside">
+                                           <div class="card">
+                                               <div class="card-body text-center">
+                                                   <p><img class=" img-fluid" src="{% static "image1/s.jpg" %}" alt="card image"></p>
+                                                   <h4 class="card-title"><b>SNCU</b></h4>
+
+
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                   </div>
+
+                           </div>
+                           <!-- ./Team member -->
+                           <!-- Team member -->
+
+               <!---modify----->
+               <!--- <section id="team" class="pb-5"> ---->
+                 <div class="container">
+
+               <div class="row">
+
+                 <div class="col-xs-12 col-sm-6 col-md-3">
+
+                         <div class="mainflip">
+                             <div class="frontside">
+                                 <div class="card">
+                                     <div class="card-body text-center">
+                                         <p><img class=" img-fluid" src="{% static "image1/aush1.png" %}" alt="card image"></p>
+                                         <h4 class="card-title"><b>e-AUSHADHI</b></h4>
+
+
+                                     </div>
+                                 </div>
+                             </div>
+
+                         </div>
+
+                 </div>
+
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-3">
+
+                       <div class="mainflip">
+                           <div class="frontside">
+                               <div class="card">
+                                   <div class="card-body text-center">
+                                       <p><img class=" img-fluid" src="{% static "image1/ncd.png" %}" alt="card image"></p>
+                                       <h4 class="card-title"><b>NCD</b></h4>
+
+
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-3">
+
+                       <div class="mainflip">
+                           <div class="frontside">
+                               <div class="card">
+                                   <div class="card-body text-center">
+                                       <p><img class=" img-fluid" src="{% static "image1/asha.png" %}" alt="card image" height:200px; width:200px;></p>
+                                       <h4 class="card-title"><b>ASHA SOFT</b></h4>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+
+               </div>
+               <!-- ./Team member -->
+               <!-- Team member -->
+               <div class="col-xs-12 col-sm-6 col-md-3">
+
+                       <div class="mainflip">
+                           <div class="frontside">
+                             <a href="https://humdo.nhp.gov.in/">
+                               <div class="card">
+                                   <div class="card-body text-center">
+                                       <p><img class=" img-fluid" src="{% static "image1/psmsa.jpg" %}" alt="card image"></p>
+                                       <h4 class="card-title"><b>PSMSA</b></h4>
+
+
+                                   </div>
+                               </div></a>
+                           </div>
+
+                       </div>
+
+               </div>
+
+               <!-- ./Team member -->
+               <!-- Team member -->
+
+               <!-- ./Team member -->
+               <!-- Team member -->
+
+               <!-- ./Team member -->
+               </div>
+               </div>
+
+               </section>
+               <!-- Team -->
+
+ <!-- ./Team member -->
+ <!-- Team member -->
+
+<!-- Team -->
+
+
+
+  </div>
+ 		</div>
+ 		<footer class="pull-left footer">
+ 			<p class="col-md-12">
+ 				<hr class="divider">
+ 				<!--Copyright &COPY; 2015 <a href="http://www.pingpong-labs.com">Gravitano</a>-->
+ 			</p>
+ 		</footer>
+ 	</div>
+  {% endblock %}

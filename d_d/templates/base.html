@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <!--<link rel="stylesheet" href="{% static "css/imgslide.css" %}">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#f8f8f8;
+   color: white;
+   text-align: center;
+}
+.footer>li>a{
+font-size:20px;
+
+}
+</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar pull-left">
+          <li class="navbar-right"><a href="#">Home</a></li>
+          <li class="navbar-right"><a href="#">Feedback</a></li>
+          <li class="navbar-right"><a href="#">Sitemap</a></li>
+        </ul>
+        <ul class="nav navbar pull-right">
+          <li class="navbar-right"><a href="#">language</a></li>
+          <li class="navbar-right"><a href="#"><i class="fa fa-facebook-f" style="font-size:20px"></i></i></a></li>
+          <li class="navbar-right"><a href="#"><i class="fa fa-twitter-square" style="font-size:20px"></i></a></li>
+          <li class="navbar-right"><a href="#"><i class="fa fa-yahoo" style="font-size:20px"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+      {% block body_block %}
+
+      {% endblock %}
+    </div>
+
+    <div class="footer" style="margin-top:30px;">
+
+    </div>
+
+
+
+
+  </body>
+</html>

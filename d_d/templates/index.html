@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+<style>
+
+
+</style>
+<nav class="navbar navbar navbar-static-top">
+  <div class="row">
+      <div class="col-md-1" id="emblem" style="padding-top:10px;">
+        <ul class="nav navbar pull-left">
+         <img  src="{% static "image/emblem.jpg" %}" alt="card image" height="90px" >
+        </ul>
+      </div>
+        <div class="col-md-9" align="center">
+            <h1  style="color:blue;padding-top:25px;font-size:38px;"><b>INTEGRATED HEALTHCARE DASHBOARD</b></h1>
+        </div>
+        <div class="col-md-2">
+          <ul class="nav navbar pull-right">
+           <img  src="{% static "image/NHM1.png" %}" alt="card image">
+          </ul>
+        </div>
+  </div>
+</nav>
+
+<div class="container-fluid toppart" id="">
+     <div class="row" style="margin-top:20px;margin-bottom:20px;">
+       <div class="col-md-2">
+         <img  src="{% static "image/modi1.jpg" %}" class="img-rounded" width="250px">
+       </div>
+       <div class="col-md-4" style="padding-left:86px;">
+         <img  src="{% static "image/chart.gif" %}" class="img-rounded" width="350px">
+       </div>
+       <div class="col-md-6">
+         <div class="col-md-6">
+           <a href="https://www.nhp.gov.in/">
+           <div class="maincard" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>National Health Portal</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+           <br>
+           <a href="https://nrhm-mis.nic.in/SitePages/Home.aspx">
+           <div class="maincard3" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Health Statistics Information Portal </span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </div>
+         <div class="col-md-6">
+           <a href="https://cghs.gov.in/">
+           <div class="maincard2" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Medical Counselling</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </br>
+         <a href="https://mcc.nic.in/">
+           <div class="maincard4" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Central Government Health Scheme</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </div>
+       </div>
+    </div>
+</div>
+
+        <div class="container-fluid">
+              <div class="row bottomlevel" style="margin-top:20px;padding-bottom:20px;">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                        <img class="img-rounded" src="{% static "finance/finance.png" %}" width="300px" height="300px" style="margin-top:10px"/>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="row">
+
+                  </div>
+                </div>
+                <div class="col-md-9">
+                        <div class="row" style="margin-top:10px;">
+                          <div class="col-md-3">
+                            <a href="{% url 'keyperformance' %}">
+                              <div class="card" id="subcard">
+                                <div>
+                                   <p class="colorboxesheading">
+                                     <span>KPIs</span>
+                                    </p>
+                                   <hr>
+                                   <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+                                </div>
+                            </div>
+                           </a>
+                          </div>
+                          <div class="col-md-3">
+                         <a href="{% url 'financial' %}">
+                            <div class="card1" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Financial Overview</span>
+                                 </p>
+                                 <hr>
+                                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                          <div class="col-md-3">
+                          <a href="">
+                            <div class="card2" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Data Analytics</span>
+                                 </p>
+                                 <hr>
+                                 <center><img class=" img-fluid" src="{% static "image/DATA ANALYSIS.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                          <div class="col-md-3">
+                         <a href="">
+                            <div class="card3" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Search</span>
+                                 </p>
+                                 <hr>
+                                  <center><img class=" img-fluid" src="{% static "image/SEARCH.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                        </div>
+
+                        <div class="row" style="margin-top:15px;">
+                          <div class="col-md-3" id="subcard">
+                          <a href="{% url 'department' %}">
+                            <div class="card4">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Departments</span>
+                                 </p>
+                                 <hr>
+                                  <center><img class="img-fluid" src="{% static "image/DEPARTMENT.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                          <div class="col-md-3">
+                           <a href="{% url 'portfolio' %}">
+                            <div class="card5" id="subcard">
+                                <div>
+                                   <p class="colorboxesheading">
+                                     <span>Health Portals</span>
+                                   </p>
+                                   <hr>
+                                    <center><img class=" img-fluid" src="{% static "image/PORTFOLIOS.png" %}" alt="card image" height="100px" width="100px"></center>
+                                </div>
+                            </div>
+                          </a>
+                          </div>
+                          <div class="col-md-3">
+                          <a href="{% url 'program' %}">
+                            <div class="card6" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Programmes & Schemes</span>
+                                 </p>
+                                 <hr>
+                                  <center><img class=" img-fluid" src="{% static "image/PROGRAMS AND SCHEMES.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                          <div class="col-md-3">
+                          <a href="{% url 'district' %}">
+                            <div class="card7" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>District/Zonal Report</span>
+                                 </p>
+                                 <hr>
+                                  <center><img class=" img-fluid" src="{% static "image/DISTRICT AND ZONAL REPORTS.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                        </div>
+
+                      <div class="row" style="margin-top:15px;">
+                        <div class="col-md-3">
+                       <a href="">
+                          <div class="card8" id="subcard">
+                            <div>
+                               <p class="colorboxesheading">
+                                 <span>Portfolio Performer Award</span>
+                               </p>
+                               <hr>
+                                <center><img class=" img-fluid" src="{% static "image/PORTFOLIOS AND BEST PERFORMANCE AWARDS.png" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="{% url 'help' %}">
+                          <div class="card9" id="subcard">
+                            <div>
+                               <p class="colorboxesheading">
+                                 <span>Help/Contact Us</span>
+                               </p>
+                               <hr>
+                                <center><img class=" img-fluid" src="{% static "image/CONTACT US.png" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="{% url 'calendar' %}">
+                          <div class="card10" id="subcard">
+                            <div>
+                               <p class="colorboxesheading">
+                                 <span>Calendar Events</span>
+                               </p>
+                               <hr>
+                                <center><img class=" img-fluid" src="{% static "image/EVENT CALENDAR.png" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="{% url 'chat' %}">
+                          <div class="card10_1" id="subcard">
+                            <div>
+                               <p class="colorboxesheading">
+                                 <span>Chat</span>
+                               </p>
+                               <hr>
+                                <center><img class=" img-fluid" src="{% static "image/chat1.jpg" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                      </div>
+                 </div>
+             </div>
+         </div>
+
+
+  {% endblock %}

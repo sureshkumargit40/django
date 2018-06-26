@@ -1,0 +1,519 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+<script>
+jQuery(function ($) {
+    $('.panel').hover(function () {
+        $(this).find('.collapse').stop(true, true).slideDown("slow")
+    }, function () {
+        $(this).find('.collapse').stop(true, true).slideUp("slow")
+    }).find('.collapse').hide()
+
+})
+</script>
+
+
+ <nav class="navbar navbar-default navbar-static-top" style="margin-top:30px;>
+ 	<div class="container-fluid">
+    <div class="container">
+
+ <center><font color="blue"><h3 class="section-title h1"><b> District / Zonal Report</b></h3></font></center>
+ 		<!-- Brand and toggle get grouped for better mobile display -->
+ 		<div class="navbar-header">
+ 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+ 				<span class="sr-only">Toggle navigation</span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 			</button>
+ 	</nav>
+
+ 	<div class="container-fluid main-container">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-3">
+      <div class="panel-group" id="accordion" style="margin-top:50px;">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                       _All_India_DataUploadStatus</a>
+                     </h5>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <a	href="{% static "data/_All_India_DataUploadStatus.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                       A & N Islands</a>
+                      </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <a	href="{% static "data/A & N Islands.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                        </div>
+                    </div>
+                  </div>
+                 <div class="panel panel-primary">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                     Andhra Pradesh Old</a>
+                    </h4>
+                    </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <a	href="{% static "data/Andhra Pradesh Old.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-primary">
+                     <div class="panel-heading">
+                     <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                      Arunachal Pradesh</a>
+                     </h4>
+                     </div>
+                       <div id="collapse4" class="panel-collapse collapse">
+                         <div class="panel-body">
+                             <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-primary">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                       Assam</a>
+                      </h4>
+                      </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                       <div class="panel-heading">
+                       <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                        Bihar</a>
+                       </h4>
+                       </div>
+                         <div id="collapse6" class="panel-collapse collapse">
+                           <div class="panel-body">
+                               <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h4 class="panel-title">
+                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                         Chandigarh</a>
+                        </h4>
+                        </div>
+                          <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-primary">
+                         <div class="panel-heading">
+                         <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                          Chhattisgarh</a>
+                         </h4>
+                         </div>
+                           <div id="collapse8" class="panel-collapse collapse">
+                             <div class="panel-body">
+                                 <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                             </div>
+                           </div>
+                       </div>
+                       <div class="panel panel-primary">
+                          <div class="panel-heading">
+                        <h5 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                          Dadra & Nagar Haveli</a>
+                         </h5>
+                          </div>
+                            <div id="collapse9" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                           <div class="panel-heading">
+                         <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                           Daman & Diu</a>
+                          </h5>
+                           </div>
+                             <div id="collapse10" class="panel-collapse collapse">
+                               <div class="panel-body">
+                                   <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                               </div>
+                             </div>
+                         </div>
+                         <div class="panel panel-primary">
+                            <div class="panel-heading">
+                          <h5 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse35">
+                            Sikkim</a>
+                           </h5>
+                            </div>
+                              <div id="collapse35" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-primary">
+                             <div class="panel-heading">
+                           <h5 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse36">
+                             Tamil Nadu</a>
+                            </h5>
+                             </div>
+                               <div id="collapse36" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                     <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                 </div>
+                               </div>
+                           </div>
+               </div>
+           </div>
+    <div class="col-md-3">
+      <div class="panel-group" id="accordion1" style="margin-top:50px;">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion1" href="#collapse11">
+                       Delhi</a>
+                     </h5>
+                      </div>
+                      <div id="collapse11" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <a	href="{% static "data/Delhi.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion1" href="#collapse12">
+                       Goa</a>
+                      </h4>
+                      </div>
+                      <div id="collapse12" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <a	href="{% static "data/Goa.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                        </div>
+                    </div>
+                  </div>
+                 <div class="panel panel-primary">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion1" href="#collapse13">
+                     Gujarat</a>
+                    </h4>
+                    </div>
+                      <div id="collapse13" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <a	href="{% static "data/Gujarat.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-primary">
+                     <div class="panel-heading">
+                     <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapse14">
+                      Haryana</a>
+                     </h4>
+                     </div>
+                       <div id="collapse14" class="panel-collapse collapse">
+                         <div class="panel-body">
+                             <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="panel panel-primary">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion1" href="#collapse15">
+                       Himachal Pradesh</a>
+                      </h4>
+                      </div>
+                        <div id="collapse15" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                       <div class="panel-heading">
+                       <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse16">
+                        Jammu & Kashmir</a>
+                       </h4>
+                       </div>
+                         <div id="collapse16" class="panel-collapse collapse">
+                           <div class="panel-body">
+                               <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h4 class="panel-title">
+                         <a data-toggle="collapse" data-parent="#accordion1" href="#collapse17">
+                         Jharkhand</a>
+                        </h4>
+                        </div>
+                          <div id="collapse17" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-primary">
+                         <div class="panel-heading">
+                         <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion1" href="#collapse18">
+                          Karnataka</a>
+                         </h4>
+                         </div>
+                           <div id="collapse18" class="panel-collapse collapse">
+                             <div class="panel-body">
+                                 <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                             </div>
+                           </div>
+                       </div>
+                       <div class="panel panel-primary">
+                          <div class="panel-heading">
+                        <h5 class="panel-title">
+                           <a data-toggle="collapse" data-parent="#accordion1" href="#collapse19">
+                        Kerala</a>
+                         </h5>
+                          </div>
+                            <div id="collapse19" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                           <div class="panel-heading">
+                         <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse20">
+                           Lakshadweep</a>
+                          </h5>
+                           </div>
+                             <div id="collapse20" class="panel-collapse collapse">
+                               <div class="panel-body">
+                                   <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                               </div>
+                             </div>
+                         </div>
+                         <div class="panel panel-primary">
+                            <div class="panel-heading">
+                          <h5 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion1" href="#collapse33">
+                            Tripura</a>
+                           </h5>
+                            </div>
+                              <div id="collapse33" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-primary">
+                             <div class="panel-heading">
+                           <h5 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion1" href="#collapse34">
+                             Uttar Pradesh</a>
+                            </h5>
+                             </div>
+                               <div id="collapse34" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                     <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                 </div>
+                               </div>
+                           </div>
+               </div>
+           </div>
+           <div class="col-md-3">
+             <div class="panel-group" id="accordion2" style="margin-top:50px;">
+                         <div class="panel panel-primary">
+                           <div class="panel-heading">
+                             <h5 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse21">
+                              Madhya Pradesh</a>
+                            </h5>
+                             </div>
+                             <div id="collapse21" class="panel-collapse collapse">
+                             <div class="panel-body">
+                                 <a	href="{% static "data/Madhya Pradesh.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="panel panel-primary">
+                           <div class="panel-heading">
+                             <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse22">
+                              Maharashtra</a>
+                             </h4>
+                             </div>
+                             <div id="collapse22" class="panel-collapse collapse">
+                               <div class="panel-body">
+                                   <a	href="{% static "data/Maharashtra.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                               </div>
+                           </div>
+                         </div>
+                        <div class="panel panel-primary">
+                           <div class="panel-heading">
+                           <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse23">
+                            Manipur</a>
+                           </h4>
+                           </div>
+                             <div id="collapse23" class="panel-collapse collapse">
+                               <div class="panel-body">
+                                   <a	href="{% static "data/Manipur.xls" %}" download><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                               </div>
+                             </div>
+                         </div>
+                         <div class="panel panel-primary">
+                            <div class="panel-heading">
+                            <h4 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion2" href="#collapse24">
+                             Meghalaya</a>
+                            </h4>
+                            </div>
+                              <div id="collapse24" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-primary">
+                             <div class="panel-heading">
+                             <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse25">
+                              Mizoram</a>
+                             </h4>
+                             </div>
+                               <div id="collapse25" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                     <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                 </div>
+                               </div>
+                           </div>
+                           <div class="panel panel-primary">
+                              <div class="panel-heading">
+                              <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapse26">
+                               Nagaland</a>
+                              </h4>
+                              </div>
+                                <div id="collapse26" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                               <div class="panel-heading">
+                               <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse27">
+                                Odisha</a>
+                               </h4>
+                               </div>
+                                 <div id="collapse27" class="panel-collapse collapse">
+                                   <div class="panel-body">
+                                       <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapse28">
+                                 Puducherry</a>
+                                </h4>
+                                </div>
+                                  <div id="collapse28" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="panel panel-primary">
+                                 <div class="panel-heading">
+                               <h5 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion2" href="#collapse29">
+                                 Punjab</a>
+                                </h5>
+                                 </div>
+                                   <div id="collapse29" class="panel-collapse collapse">
+                                     <div class="panel-body">
+                                         <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                     </div>
+                                   </div>
+                               </div>
+                               <div class="panel panel-primary">
+                                  <div class="panel-heading">
+                                <h5 class="panel-title">
+                                   <a data-toggle="collapse" data-parent="#accordion2" href="#collapse30">
+                                  Rajasthan</a>
+                                 </h5>
+                                  </div>
+                                    <div id="collapse30" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                          <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-primary">
+                                   <div class="panel-heading">
+                                 <h5 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse31">
+                                   Uttarakhand</a>
+                                  </h5>
+                                   </div>
+                                     <div id="collapse31" class="panel-collapse collapse">
+                                       <div class="panel-body">
+                                           <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                       </div>
+                                     </div>
+                                 </div>
+                                 <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                  <h5 class="panel-title">
+                                     <a data-toggle="collapse" data-parent="#accordion2" href="#collapse32">
+                                    West Bengal</a>
+                                   </h5>
+                                    </div>
+                                      <div id="collapse32" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <a	href=""><img src="{% static "image/excel.jpg" %}"/><h4>Download</h4></a>
+                                        </div>
+                                      </div>
+                                  </div>
+                      </div>
+                  </div>
+ 	</div>
+
+  {% endblock %}
